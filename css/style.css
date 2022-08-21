@@ -1,0 +1,113 @@
+@import "./global.css";
+@import "./header.css";
+
+.titulo {
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* justify-content: center; */
+  /* place-content: center; */
+  justify-items: center;
+  column-gap: 2rem;
+}
+
+.titulo img {
+  max-height: 520px;
+  max-width: 360px;
+  align-self: center;
+  row-gap: 2rem;
+}
+
+h1 {
+  text-align: left;
+  font-size: 4rem;
+  margin: 0px 100px 0px 0px;
+  position: relative;
+  line-height: 80px;
+  /* max-width: 2ch; */
+}
+
+h1::before {
+  content: url(./img/detalhe.svg);
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: -50px;
+}
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+h2 {
+  font-size: 9rem;
+  color: #e0e0e0;
+  font-weight: bold;
+  word-break: break-all;
+  padding: 0px 150px;
+  text-transform: uppercase;
+  place-self: center;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+}
+.bold {
+  font-weight: bold;
+}
+.experienciaGeral {
+  max-width: 10ch;
+}
+
+.habilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f7f7f7;
+  margin: 10px 0px;
+  padding: 15px;
+  border-radius: 5px;
+  column-gap: 2rem;
+}
+.habilidadeConteudo {
+  grid-row: 2;
+}
+.tags {
+  display: flex;
+  grid-column: 2;
+  grid-row: 2;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+.tag {
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.habilidadesTitulo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.habilidadesTitulo::before {
+  content: " ";
+  display: inline-block;
+  background-color: #90eb1a;
+  height: 20px;
+  width: 5px;
+  position: absolute;
+  left: -20px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    margin: auto 15vw;
+    /* background-color: #90eb1a; */
+  }
+}
