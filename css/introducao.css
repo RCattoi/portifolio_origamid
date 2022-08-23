@@ -1,0 +1,69 @@
+.fotoPerfil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  /* margin-bottom: 80px; */
+  position: relative;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: -25px;
+  left: -35px;
+}
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  h1::before {
+    width: 100px;
+    height: 70px;
+    left: -70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  h1::before {
+    width: 70px;
+    height: 60px;
+    left: -45px;
+    top: -60px;
+  }
+}
+@media (max-width: 600px) {
+  .introducao img {
+    display: none;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
