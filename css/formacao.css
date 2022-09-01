@@ -135,9 +135,16 @@
   }
 }
 
-@media (max-width: 463px) {
+@media (max-width: 470px) {
   .faculdade-lista {
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .faculdade {
+    width: 90%;
+    justify-content: left;
+  }
+  .faculdade-curso {
+    margin-left: 0px;
   }
 }

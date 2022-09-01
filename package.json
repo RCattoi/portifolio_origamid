@@ -1,0 +1,19 @@
+{
+  "name": "lint",
+  "version": "1",
+  "description": "teste",
+  "main": ".",
+  "repository": "https://github.com/RCattoi/portifolio_origamid.git",
+  "author": "Rodrigo Cattoi <rodrigoccattoi@gmail.com>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "coommit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "husky": "^8.0.1"
+  }
+}
