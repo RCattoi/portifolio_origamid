@@ -1,3 +1,6 @@
+:root {
+  --detalhe_bg: linear-gradient(#b6f829, #67dd0a);
+}
 body {
   margin: 0px;
   font-family: "Fira Sans", Arial, sans-serif;
