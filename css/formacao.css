@@ -1,6 +1,7 @@
 .formacao {
   background: #141414;
   color: white;
+  position: relative;
 }
 .formacao .subtitulo {
   color: #000000;
@@ -119,6 +120,16 @@
 .formacao-extra li {
   display: flex;
   justify-content: space-between;
+}
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 50px;
 }
 
 @media (max-width: 800px) {
