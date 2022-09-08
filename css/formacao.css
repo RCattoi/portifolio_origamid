@@ -2,17 +2,22 @@
   background: #141414;
   color: white;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .formacao .subtitulo {
   color: #000000;
+  align-self: start;
 }
 .formacao-container {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 100px;
+  gap: 250px;
   justify-items: center;
   padding: 120px 60px;
   color: #525252;
+  place-items: start;
 }
 
 .formacao-texto {

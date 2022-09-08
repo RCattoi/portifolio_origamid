@@ -1,5 +1,7 @@
 .footer {
   background: black;
+  display: flex;
+  justify-content: center;
 }
 .footer_conteiner {
   max-width: 1200px;
@@ -40,12 +42,6 @@
   grid-column: 1 / -1;
   font-size: 00.875rem;
   color: #8f8f8f;
-}
-
-@media (max-width: 1000px) {
-  .footer_conteiner {
-    /* gap: 150px; */
-  }
 }
 
 @media (max-width: 800px) {
