@@ -146,7 +146,7 @@
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 600px) {
   .faculdade-lista {
     display: grid;
     grid-template-columns: 1fr;

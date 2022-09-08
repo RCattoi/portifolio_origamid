@@ -36,7 +36,7 @@ ul a {
     gap: 40px;
     padding: 20px;
   }
-  ul a {
+  .header__link {
     background-color: #f5f5f5;
     border-radius: 5px;
   }
